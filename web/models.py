@@ -8,4 +8,11 @@ class contact(models.Model):
     tel = models.CharField(max_length=11)
     email = models.EmailField()
     address = models.CharField(max_length=50)
+     
+     
     
+class epg_group(models.Model):
+    epg_platform = models.CharField(max_length=20)
+    epg_name = models.CharField(max_length=20)
+    epg_code = models.CharField(max_length=20)
+    epg_type = models.CharField(max_length=20)
